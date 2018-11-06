@@ -9,7 +9,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ты сегодня уже пропустил пары. Приходи пропускать завтра!"
+        android:text="Ты сегодня уже проебал пары. Приходи завтра!"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"

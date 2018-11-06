@@ -3,4 +3,37 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/humoreski"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Мои любимые юморески"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/aneks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:paddingTop="8dp"
+            android:text="Анекдоты категории Б"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:paddingTop="8dp"
+            android:text="Рассказать друзьям"
+            android:textSize="30sp" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -58,7 +58,8 @@ public class RoomService {
 
                     @Override
                     public void onSuccess(List<Miss> miss) {
-                        getDataCallback.onSuccess(miss.get(0));
+                        if (miss.size() != 0)
+                            getDataCallback.onSuccess(miss.get(0));
                     }
 
                     @Override

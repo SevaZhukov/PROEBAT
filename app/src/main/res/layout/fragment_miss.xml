@@ -58,7 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Сколько собираешься пропустить?"
+            android:text="Сколько собираешься проебать?"
             android:textAlignment="center"
             android:textSize="24sp" />
 
