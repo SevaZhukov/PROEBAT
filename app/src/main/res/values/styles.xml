@@ -8,4 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="MyToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="titleTextColor">#FFFFFF</item>
+    </style>
+
+    <style name="TabAppTheme" parent="Theme.AppCompat.Light.DarkActionBar"></style>
+
 </resources>
