@@ -17,7 +17,7 @@
         tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/statisticFragment"
-        android:name="com.memebattle.proebat.fragment.StatisticFragment"
+        android:name="com.memebattle.proebat.fragment.statistics.StatisticFragment"
         android:label="fragment_statictis"
         tools:layout="@layout/fragment_statictis" />
 </navigation>
