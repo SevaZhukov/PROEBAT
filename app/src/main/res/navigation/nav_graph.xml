@@ -9,7 +9,11 @@
         android:id="@+id/missFragment"
         android:name="com.memebattle.proebat.fragment.MissFragment"
         android:label="fragment_miss"
-        tools:layout="@layout/fragment_miss" />
+        tools:layout="@layout/fragment_miss" >
+        <action
+            android:id="@+id/action_missFragment_to_alreadyMissFragment"
+            app:destination="@id/alreadyMissFragment" />
+    </fragment>
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.memebattle.proebat.fragment.SettingsFragment"
@@ -20,4 +24,9 @@
         android:name="com.memebattle.proebat.fragment.statistics.StatisticFragment"
         android:label="fragment_statictis"
         tools:layout="@layout/fragment_statictis" />
+    <fragment
+        android:id="@+id/alreadyMissFragment"
+        android:name="com.memebattle.proebat.fragment.AlreadyMissFragment"
+        android:label="fragment_already_miss"
+        tools:layout="@layout/fragment_already_miss" />
 </navigation>

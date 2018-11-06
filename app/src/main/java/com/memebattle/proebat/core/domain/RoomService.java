@@ -6,6 +6,8 @@ import com.memebattle.proebat.App;
 import com.memebattle.proebat.core.data.Miss;
 import com.memebattle.proebat.core.data.MissDAO;
 
+import java.util.List;
+
 import io.reactivex.Completable;
 import io.reactivex.Single;
 import io.reactivex.android.schedulers.AndroidSchedulers;
@@ -52,16 +54,16 @@ public class RoomService {
         Single.fromCallable(() -> missDAO.getLast())
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new DisposableSingleObserver<Miss>() {
+                .subscribe(new DisposableSingleObserver<List<Miss>>() {
 
                     @Override
-                    public void onSuccess(Miss miss) {
-
+                    public void onSuccess(List<Miss> miss) {
+                        getDataCallback.onSuccess(miss.get(0));
                     }
 
                     @Override
                     public void onError(Throwable e) {
-
+                        getDataCallback.onFailure(e);
                     }
                 });
     }

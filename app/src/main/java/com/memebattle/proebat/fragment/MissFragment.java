@@ -1,6 +1,7 @@
 package com.memebattle.proebat.fragment;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -49,15 +50,18 @@ public class MissFragment extends Fragment {
         roomService.getMiss(new RoomService.GetDataCallback<Miss>() {
             @Override
             public void onSuccess(Miss result) {
+
                 Date date = new Date(result.getDate());
+                Log.i("code", "success " + date.getDay());
+                Log.i("code", "date " + new Date().getDay());
                 if(date.getDay() == new Date().getDay()) {
-                    //navController.navigate();
+                    navController.navigate(R.id.action_missFragment_to_alreadyMissFragment);
                 }
             }
 
             @Override
             public void onFailure(Throwable throwable) {
-
+                Log.i("code", "error " + throwable.getMessage());
             }
         });
 
@@ -82,7 +86,7 @@ public class MissFragment extends Fragment {
             }
             if(countAll < countWant) {
                 countWant = countAll;
-                wantText.setText(countWant);
+                wantText.setText(countWant + "");
             }
         });
         wantPlus.setOnClickListener(v1 -> {
@@ -99,9 +103,11 @@ public class MissFragment extends Fragment {
         });
         missLeft.setOnClickListener(v12 -> {
             roomService.createMiss(new Miss(new Date().getTime(), countAll, countWant));
+            navController.navigate(R.id.action_missFragment_to_alreadyMissFragment);
         });
         missRight.setOnClickListener(v12 -> {
             roomService.createMiss(new Miss(new Date().getTime(), countAll, countWant));
+            navController.navigate(R.id.action_missFragment_to_alreadyMissFragment);
         });
         return v;
     }
