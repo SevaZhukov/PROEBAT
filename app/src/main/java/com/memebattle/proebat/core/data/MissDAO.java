@@ -14,6 +14,9 @@ public interface MissDAO {
         //Проебы за все время
     long getSumOfMiss();
 
+    @Query("SELECT * FROM miss ORDER BY id DESC LIMIT 1")
+    Miss getLast();
+
     @Query("SELECT SUM(amountOfMiss) FROM miss WHERE date >= :beginDate and date <= :endDate")
         //Проебы за период
     long getSumOfMiss(long beginDate, long endDate);

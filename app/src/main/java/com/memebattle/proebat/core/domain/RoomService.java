@@ -48,6 +48,24 @@ public class RoomService {
                 });
     }
 
+    public void getMiss(GetDataCallback<Miss> getDataCallback) {
+        Single.fromCallable(() -> missDAO.getLast())
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new DisposableSingleObserver<Miss>() {
+
+                    @Override
+                    public void onSuccess(Miss miss) {
+
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+
+                    }
+                });
+    }
+
 
     public void dropDatabase() {
         Completable.fromAction(() -> missDAO.dropDatabase())

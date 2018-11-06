@@ -6,6 +6,13 @@ import androidx.room.PrimaryKey;
 
 @Entity
 public class Miss {
+
+    public Miss(long date, long amountOfClasses, long amountOfMiss) {
+        this.date = date;
+        this.amountOfClasses = amountOfClasses;
+        this.amountOfMiss = amountOfMiss;
+    }
+
     @PrimaryKey(autoGenerate = true)
     private long id;
 
