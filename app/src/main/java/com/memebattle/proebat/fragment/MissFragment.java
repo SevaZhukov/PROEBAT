@@ -42,6 +42,7 @@ public class MissFragment extends Fragment {
         wantPlus = v.findViewById(R.id.want_plus);
         wantMinus = v.findViewById(R.id.want_minus);
 
+
         allPlus.setOnClickListener(v1 -> {
             countAll++;
             allText.setText(countAll+"");
