@@ -1,5 +1,7 @@
 package com.memebattle.proebat.core.data;
 
+import java.util.List;
+
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
@@ -15,7 +17,7 @@ public interface MissDAO {
     long getSumOfMiss();
 
     @Query("SELECT * FROM miss ORDER BY id DESC LIMIT 1")
-    Miss getLast();
+    List<Miss> getLast();
 
     @Query("SELECT SUM(amountOfMiss) FROM miss WHERE date >= :beginDate and date <= :endDate")
         //Проебы за период
