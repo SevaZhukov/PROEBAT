@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/missFragment"
+        android:title="@string/title_miss" />
+    <item
+        android:id="@+id/statisticFragment"
+        android:title="@string/title_statistic" />
+    <item
+        android:id="@+id/settingsFragment"
+        android:title="@string/title_settings" />
+    </menu>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/statisticFragment">
+
+    <fragment
+        android:id="@+id/missFragment"
+        android:name="com.memebattle.proebat.fragment.MissFragment"
+        android:label="fragment_miss"
+        tools:layout="@layout/fragment_miss" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.memebattle.proebat.fragment.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/statisticFragment"
+        android:name="com.memebattle.proebat.fragment.StatisticFragment"
+        android:label="fragment_statictis"
+        tools:layout="@layout/fragment_statictis" />
+</navigation>
