@@ -2,11 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/missFragment"
+        android:icon="@drawable/ic_miss"
         android:title="@string/title_miss" />
     <item
         android:id="@+id/statisticFragment"
+        android:icon="@drawable/ic_statistic"
         android:title="@string/title_statistic" />
     <item
         android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_settings"
         android:title="@string/title_settings" />
     </menu>
