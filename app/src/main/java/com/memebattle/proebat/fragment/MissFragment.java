@@ -70,6 +70,7 @@ public class MissFragment extends Fragment {
         missLeft = v.findViewById(R.id.miss_left);
         missRight = v.findViewById(R.id.miss_right);
 
+
         allPlus.setOnClickListener(v1 -> {
             countAll++;
             allText.setText(countAll + "");
