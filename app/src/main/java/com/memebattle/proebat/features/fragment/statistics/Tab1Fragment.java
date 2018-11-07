@@ -1,4 +1,4 @@
-package com.memebattle.proebat.fragment.statistics;
+package com.memebattle.proebat.features.fragment.statistics;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.memebattle.proebat.R;
-import com.memebattle.proebat.core.domain.RoomService;
+import com.memebattle.proebat.core.domain.interactor.RoomService;
 
 import java.util.Date;
 

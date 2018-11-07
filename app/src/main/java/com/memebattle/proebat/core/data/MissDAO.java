@@ -1,5 +1,7 @@
 package com.memebattle.proebat.core.data;
 
+import com.memebattle.proebat.core.domain.model.Miss;
+
 import java.util.List;
 
 import androidx.room.Dao;

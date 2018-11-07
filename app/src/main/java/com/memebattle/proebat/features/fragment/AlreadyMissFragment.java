@@ -1,4 +1,4 @@
-package com.memebattle.proebat.fragment;
+package com.memebattle.proebat.features.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

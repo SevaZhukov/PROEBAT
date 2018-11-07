@@ -1,4 +1,4 @@
-package com.memebattle.proebat.fragment;
+package com.memebattle.proebat.features.fragment;
 
 import android.content.Intent;
 import android.net.Uri;

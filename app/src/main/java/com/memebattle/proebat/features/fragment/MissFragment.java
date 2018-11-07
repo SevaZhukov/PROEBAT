@@ -1,4 +1,4 @@
-package com.memebattle.proebat.fragment;
+package com.memebattle.proebat.features.fragment;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -9,10 +9,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.memebattle.proebat.App;
 import com.memebattle.proebat.R;
-import com.memebattle.proebat.core.data.Miss;
-import com.memebattle.proebat.core.domain.RoomService;
+import com.memebattle.proebat.core.domain.model.Miss;
+import com.memebattle.proebat.core.domain.interactor.RoomService;
 
 import java.util.Date;
 
@@ -50,10 +49,7 @@ public class MissFragment extends Fragment {
         roomService.getMiss(new RoomService.GetDataCallback<Miss>() {
             @Override
             public void onSuccess(Miss result) {
-
                 Date date = new Date(result.getDate());
-                Log.i("code", "success " + date.getDay());
-                Log.i("code", "date " + new Date().getDay());
                 if(date.getDay() == new Date().getDay()) {
                     navController.navigate(R.id.action_missFragment_to_alreadyMissFragment);
                 }

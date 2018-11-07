@@ -1,4 +1,4 @@
-package com.memebattle.proebat.fragment.statistics;
+package com.memebattle.proebat.features.fragment.statistics;
 
 import android.content.Context;
 import android.os.Bundle;

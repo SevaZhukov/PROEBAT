@@ -1,4 +1,4 @@
-package com.memebattle.proebat.core.data;
+package com.memebattle.proebat.core.domain.model;
 
 
 import androidx.room.Entity;

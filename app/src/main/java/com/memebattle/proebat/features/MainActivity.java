@@ -1,4 +1,4 @@
-package com.memebattle.proebat;
+package com.memebattle.proebat.features;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -8,6 +8,7 @@ import androidx.navigation.ui.NavigationUI;
 import android.os.Bundle;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.memebattle.proebat.R;
 
 public class MainActivity extends AppCompatActivity {
 

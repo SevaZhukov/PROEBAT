@@ -1,4 +1,4 @@
-package com.memebattle.proebat.fragment.statistics;
+package com.memebattle.proebat.features.fragment.statistics;
 
 import java.util.ArrayList;
 import java.util.List;

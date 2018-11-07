@@ -1,9 +1,9 @@
-package com.memebattle.proebat.core.domain;
+package com.memebattle.proebat.core.domain.interactor;
 
 import android.util.Log;
 
 import com.memebattle.proebat.App;
-import com.memebattle.proebat.core.data.Miss;
+import com.memebattle.proebat.core.domain.model.Miss;
 import com.memebattle.proebat.core.data.MissDAO;
 
 import java.util.List;
